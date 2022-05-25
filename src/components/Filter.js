@@ -73,7 +73,7 @@ function Filter() {
                 <label htmlFor=""> Rating: </label>{' '}
                 <Rating
                     rating={byRating}
-                    onClick={(i) => {
+                    handleRating={(i) => {
                         productDispatch({
                             type: 'FILTER_BY_RATING',
                             payload: i + 1,
