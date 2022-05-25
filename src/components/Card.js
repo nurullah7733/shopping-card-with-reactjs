@@ -18,7 +18,7 @@ function Card(props) {
         state: { card },
         dispatch,
     } = CardState();
-    console.log(card);
+   
 
     useEffect(() => {
         setTotal(card.reduce((acc, curr) => acc + curr.price * curr.qty, 0));
